@@ -38,15 +38,14 @@ const Containers = ({ history }) => {
   const [trueFalseBoard, setTrueFalseBoard] = useState(false);
   const [updateBoard] = useMutation(UPDATETEXT_BOARD);
   const [deleteBoard] = useMutation(DELETE_BOARD);
-  const {
-    loading: getByBoardIdLoading,
-    data: getByBoardIdData,
-    refetch
-  } = useQuery(GET_BOARD, {
-    variables: {
-      id: localStorage.getItem("id")
+  const { loading: getByBoardIdLoading, data: getByBoardIdData } = useQuery(
+    GET_BOARD,
+    {
+      variables: {
+        id: localStorage.getItem("id")
+      }
     }
-  });
+  );
 
   const useStyles = makeStyles({
     root: {

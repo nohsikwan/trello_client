@@ -1,13 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Auth from "../Routes/Auth";
 import Board from "../Routes/Boards";
 import EditProfile from "../Routes/EditProfile";
-import Search from "../Routes/Search";
 import Containers from "../Routes/Containers";
-import Store from "../store";
 
-const LoggedInRoutes = ({ name }) => (
+const LoggedInRoutes = () => (
   <Switch>
     <Route exact path="/" render={() => <Board />} />
     <Route
