@@ -33,3 +33,7 @@ $ npm(yarn) install
 <img width="300" src="./img/Board1.png" />
 
 </div>
+
+### 서비스 시연 링크
+
+- https://youtu.be/JPywnV79jio
